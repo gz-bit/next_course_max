@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { createBrotliCompress } from 'zlib'
 import logo from '../../public/z-round-transparent.png'
+import css from './LayoutStyles.module.css'
 
 interface Crumb {
   link: string
@@ -17,7 +18,7 @@ const Footer = (params: Params) => {
   const links: JSXElement[] = []
   
   return (
-    <div className="footer">
+    <div className={css.footer}>
       <div  className='logo'>
       <Image 
         src={logo} alt="logo" 
@@ -25,12 +26,12 @@ const Footer = (params: Params) => {
       />
       </div>
 
-      <div className='container'>
-        <i>z-bit</i>
+      <div className={css.element}>
+        <b><i>z-bit</i></b>
       </div>
       
       {crumbs.map((crumb, index) => 
-        <div key={index}>
+        <div key={index} className={css.element} >
           <Link href={crumb.link}>
             {'>' + crumb.caption}
           </Link>

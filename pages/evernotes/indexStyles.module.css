@@ -1,0 +1,89 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+ 
+  height: 90vh;
+  width: 100%;
+  border: 2px solid darkblue;
+  border-radius: 15px;
+}
+.header {
+  align-self: stretch;
+  height: 10%;
+  border: 2px solid lightskyblue;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+.content {
+  max-height:80%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-self: stretch;
+}
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 50%;
+    height: 100%;
+    border: 2px solid lightcoral;
+    border-radius: 15px;
+    overflow-y: auto;
+  }
+    .list {
+      flex-basis: 100%;
+      height:100%;
+      border: 2px solid lightskyblue;
+      border-radius: 15px;
+      padding: 20px;
+    }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 2px solid lightcoral;
+    border-radius: 15px;
+  }
+    .detail {
+
+      border: 2px solid lightskyblue;
+      border-radius: 15px;
+      padding: 20px;
+    
+    }
+    .edit {
+
+      border: 2px solid lightskyblue;
+      border-radius: 15px;
+      padding: 20px;
+  
+    }
+    .space {
+     
+      align-self: stretch;
+    }
+    .todo {
+      width: 100%;
+      height: 30%;
+      border: 2px solid lightskyblue;
+      border-radius: 15px;
+      padding: 20px;
+      overflow-y: scroll;
+      flex: 1;
+      align-self: center;
+    }
+    .todo li {
+      padding-bottom: 1rem;
+      padding-right: 1rem;
+    }
+
+.footer {
+  height: 10%;
+  align-self: stretch;
+  border: 2px solid lightskyblue;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+

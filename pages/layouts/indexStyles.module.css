@@ -1,0 +1,29 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  border: 2px solid darkblue;
+  border-radius: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 500px;
+  border: 2px solid darkblue;
+  border-radius: 15px;
+}
+
+.div {
+  flex: 1 1 150px;
+  padding: 20px;
+  border: 1px solid lightskyblue;
+  border-radius: 15px;
+}
+
+.text {
+  padding-bottom: 20px;
+}
+.title {
+  padding-top: 30px;
+}

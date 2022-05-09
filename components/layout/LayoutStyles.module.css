@@ -3,3 +3,10 @@
   width: 90%;
   max-width: 40rem;
 }
+
+.footer {
+  display: flex;
+}
+.element {
+  padding: 10px;
+}

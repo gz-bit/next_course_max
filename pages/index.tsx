@@ -7,11 +7,26 @@ import Footer from '../components/layout/Footer'
 const Home: NextPage = () => {
   return (
     <div className="container">
-      <h1>Next.js & React - The Complete Guide</h1>
+      <h2>Next.js & React - The Complete Guide</h2>
       <ul>
         <li>
           <Link href="/react">
             React Refresher
+          </Link>
+        </li>
+        <li>
+          <Link href="/evernote">
+            Evernote (understanding Firebase)
+          </Link>
+        </li>
+        <li>
+          <Link href="/layouts">
+            Layouts (Flexbox & CSS Grid) (dev)
+          </Link>
+        </li>
+        <li>
+          <Link href="/evernotes">
+            Evernotes (Firebase, Layout, Optimised Components)
           </Link>
         </li>
       </ul>
